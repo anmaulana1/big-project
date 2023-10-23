@@ -34,9 +34,9 @@ for url in csv_files:
 merged_df = pd.concat(dfs, ignore_index=True)
 
 # Save the merged dataframe to a new Pickle File
-merged_df.to_pickle('merged flight data.pkl')
+merged_df.to_pickle('MERGED_DATA_INTERNATIONAL.pkl')
 
 
 
-dfw = pd.read_pickle('/Users/daanmichel/TU Delft/TIL Programming/big-project/Data/Flight data/merged_flight_data.pkl')
+dfw = pd.read_pickle('/Users/daanmichel/TU Delft/TIL Programming/big-project/Data/Flight data/MERGED_DATA_INTERNATIONAL.pkl')
 print(dfw.info())
